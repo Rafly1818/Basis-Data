@@ -1,0 +1,233 @@
+Nama: Rafly Akbar Ravsanjani
+NIM: 20230801401
+UTS Praktikum Basis Data Kelompok 2
+====================================
+
+
+//Nomor 1
+
+Microsoft Windows [Version 10.0.22631.4317]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\USER>cd c:/xampp/mysql/bin
+
+c:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 10
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| orderentry         |
+| penjualan_barang   |
+| performance_schema |
+| phpmyadmin         |
+| praktikum          |
+| test               |
++--------------------+
+8 rows in set (0.001 sec)
+
+MariaDB [(none)]> use orderentry;
+Database changed
+MariaDB [orderentry]> show tables;
++----------------------+
+| Tables_in_orderentry |
++----------------------+
+| contact_customer     |
+| customers            |
+| orderitems           |
+| orders               |
+| productnotes         |
+| products             |
+| vendors              |
++----------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [orderentry]> desc vendors;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| vend_id      | char(4)     | NO   | PRI | NULL    |       |
+| vend_nama    | varchar(25) | NO   |     | NULL    |       |
+| vend_address | varchar(30) | YES  |     | NULL    |       |
+| vend_city    | varchar(20) | YES  |     | NULL    |       |
+| vend_state   | varchar(20) | YES  |     | NULL    |       |
+| vend_zip     | varchar(10) | YES  |     | NULL    |       |
+| vend_country | varchar(15) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+7 rows in set (0.013 sec)
+
+MariaDB [orderentry]> select * from vendors;
++---------+--------------------+--------------------------+-----------+-------------+----------+--------------+
+| vend_id | vend_nama          | vend_address             | vend_city | vend_state  | vend_zip | vend_country |
++---------+--------------------+--------------------------+-----------+-------------+----------+--------------+
+| V001    | PT Maju Bersama    | Jl. Raya Serpong No. 123 | Tangerang | Banten      | 15321    | Indonesia    |
+| V002    | CV Sukses Mandiri  | Jl. Gatot Subroto 45     | Jakarta   | DKI Jakarta | 10230    | Indonesia    |
+| V003    | UD Berkah Jaya     | Jl. Ahmad Yani 67        | Bandung   | Jawa Barat  | 40132    | Indonesia    |
+| V004    | PT Global Solution | Jl. Sudirman 89          | Jakarta   | DKI Jakarta | 10210    | Indonesia    |
+| V005    | CV Makmur Sejati   | Jl. Diponegoro 12        | Surabaya  | Jawa Timur  | 60241    | Indonesia    |
++---------+--------------------+--------------------------+-----------+-------------+----------+--------------+
+5 rows in set (0.000 sec)
+
+MariaDB [orderentry]> select vend_nama as 'Nama Produsen', vend_city as 'Kota Produksi' from vendors;
++--------------------+---------------+
+| Nama Produsen      | Kota Produksi |
++--------------------+---------------+
+| PT Maju Bersama    | Tangerang     |
+| CV Sukses Mandiri  | Jakarta       |
+| UD Berkah Jaya     | Bandung       |
+| PT Global Solution | Jakarta       |
+| CV Makmur Sejati   | Surabaya      |
++--------------------+---------------+
+5 rows in set (0.000 sec)
+
+=================================================================================================================
+
+//Nomor 2
+
+Microsoft Windows [Version 10.0.22631.4317]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\USER>cd c:/xampp/mysql/bin
+
+c:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 11
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| orderentry         |
+| penjualan_barang   |
+| performance_schema |
+| phpmyadmin         |
+| praktikum          |
+| test               |
++--------------------+
+8 rows in set (0.001 sec)
+
+MariaDB [(none)]> use orderentry;
+Database changed
+MariaDB [orderentry]> show tables;
++----------------------+
+| Tables_in_orderentry |
++----------------------+
+| contact_customer     |
+| customers            |
+| orderitems           |
+| orders               |
+| productnotes         |
+| products             |
+| vendors              |
++----------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [orderentry]> desc orders;
++------------+---------+------+-----+---------+-------+
+| Field      | Type    | Null | Key | Default | Extra |
++------------+---------+------+-----+---------+-------+
+| order_num  | int(11) | NO   | PRI | NULL    |       |
+| order_date | date    | NO   |     | NULL    |       |
+| cust_id    | char(5) | NO   |     | NULL    |       |
++------------+---------+------+-----+---------+-------+
+3 rows in set (0.047 sec)
+
+MariaDB [orderentry]> desc orderitems;
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| order_num          | int(11)     | NO   | PRI | NULL    |       |
+| order_item         | int(11)     | NO   | PRI | NULL    |       |
+| prod_id            | varchar(10) | NO   |     | NULL    |       |
+| quantity           | int(11)     | NO   |     | NULL    |       |
+| warehouse_location | varchar(50) | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+5 rows in set (0.010 sec)
+
+MariaDB [orderentry]> desc customers;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| cust_id      | char(4)      | NO   | PRI | NULL    |       |
+| cust_name    | varchar(50)  | YES  |     | NULL    |       |
+| cust_address | varchar(50)  | YES  |     | NULL    |       |
+| cust_city    | varchar(25)  | YES  |     | NULL    |       |
+| cust_state   | varchar(25)  | YES  |     | NULL    |       |
+| cust_country | varchar(20)  | YES  |     | NULL    |       |
+| kode_pos     | varchar(5)   | YES  |     | NULL    |       |
+| cust_contact | varchar(50)  | YES  |     | NULL    |       |
+| cust_email   | varchar(100) | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+9 rows in set (0.011 sec)
+
+MariaDB [orderentry]> select * from orders;
++-----------+------------+---------+
+| order_num | order_date | cust_id |
++-----------+------------+---------+
+|      1001 | 2024-10-15 | 1855    |
+|      1002 | 2024-10-20 | 2198    |
+|      1003 | 2024-10-25 | 2428    |
+|      1004 | 2024-11-01 | 7634    |
++-----------+------------+---------+
+4 rows in set (0.000 sec)
+
+MariaDB [orderentry]> select * from orderitems;
++-----------+------------+---------+----------+--------------------+
+| order_num | order_item | prod_id | quantity | warehouse_location |
++-----------+------------+---------+----------+--------------------+
+|      1001 |          1 | P1234   |       10 | Tangerang          |
+|      1001 |          2 | P5678   |        5 | Tangerang          |
+|      1002 |          1 | P9876   |        2 | Tangerang          |
+|      1003 |          1 | P6543   |       20 | Tangerang          |
+|      1004 |          1 | P4321   |        7 | Tangerang          |
++-----------+------------+---------+----------+--------------------+
+5 rows in set (0.001 sec)
+
+MariaDB [orderentry]> select * from customers;
++---------+-----------+----------------+-----------+---------------------+--------------+----------+--------------+-------------------+
+| cust_id | cust_name | cust_address   | cust_city | cust_state          | cust_country | kode_pos | cust_contact | cust_email        |
++---------+-----------+----------------+-----------+---------------------+--------------+----------+--------------+-------------------+
+| 1855    | Paijo     | Graha Segovia  | Bandung   | Jalan Segovia No.10 | Indonesia    | 40123    | 081234567890 | paijo@example.com |
+| 2198    | Galih     | Graha Lestari  | Aceh      | Jalan Lestari No.5  | Indonesia    | 23111    | 082345678901 | galih@example.com |
+| 2428    | Budi      | Graha Raflesia | Jakarta   | Jalan Raflesia No.3 | Indonesia    | 10110    | 083456789012 | budi@example.com  |
+| 7634    | Lina      | Graha Pesona   | Makassar  | Jalan Pesona No.7   | Indonesia    | 90111    | 084567890123 | lina@example.com  |
+| 9247    | Eri       | Graha Siena    | Medan     | Jalan Siena No.2    | Indonesia    | 20111    | 085678901234 | eri@example.com   |
++---------+-----------+----------------+-----------+---------------------+--------------+----------+--------------+-------------------+
+5 rows in set (0.000 sec)
+
+MariaDB [orderentry]> SELECT
+    -> c.cust_name,
+    -> o.order_date,
+    -> SUM(oi.quantity) AS total_order
+    -> FROM orders o
+    -> JOIN orderitems oi ON o.order_num = oi.order_num
+    -> JOIN customers c ON o.cust_id = c.cust_id
+    -> GROUP BY c.cust_name, o.order_date
+    -> ORDER BY o.order_date;
++-----------+------------+-------------+
+| cust_name | order_date | total_order |
++-----------+------------+-------------+
+| Paijo     | 2024-10-15 |          15 |
+| Galih     | 2024-10-20 |           2 |
+| Budi      | 2024-10-25 |          20 |
+| Lina      | 2024-11-01 |           7 |
++-----------+------------+-------------+
+4 rows in set (0.001 sec)
