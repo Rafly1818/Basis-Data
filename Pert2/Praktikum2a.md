@@ -78,6 +78,4 @@ Tabel ini menyimpan informasi item yang ada di dalam setiap pesanan.
 
 ## 🔗 Badge
 
-Tambahkan badge untuk memperindah tampilan repositori ini:
-
 ![MySQL](https://img.shields.io/badge/Database-MySQL-blue)

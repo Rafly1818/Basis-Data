@@ -54,7 +54,5 @@ Tabel ini menyimpan detail setiap item barang yang dijual dalam setiap transaksi
 
 ## 🔗 Badge
 
-Tambahkan badge berikut untuk mempercantik tampilan repositori di GitHub:
-
 ![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
 
