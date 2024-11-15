@@ -42,4 +42,4 @@ INSERT INTO praktikum (nama, nim, jam, hari, ruangan, dosen)
 VALUES ('Rafly Akbar Ravsanjani', '20230801401', '16.20', 'Kamis', 'CR 401', 'RANNY MEILISA , S.Kom., M.Pd.T.');
 
 
-```markdown![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
