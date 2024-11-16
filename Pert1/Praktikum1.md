@@ -32,7 +32,7 @@ SHOW DATABASES;
 ```
 Berikut adalah daftar database setelah pembuatan database `praktikum`:
 
-| Database                |
+| Database |
 |-------------------------|
 | `information_schema`    |
 | `mysql`                 |
@@ -70,7 +70,7 @@ SELECT * FROM praktikum;
 ```
 Berikut adalah data yang terdapat pada tabel `praktikum`:
 
-| Nama                   | NIM         | Jam   | Hari  | Ruangan | Dosen                          |
+| Nama | NIM | Jam | Hari | Ruangan | Dosen |
 |------------------------|-------------|-------|-------|---------|--------------------------------|
 | Rafly Akbar Ravsanjani | 20230801401 | 16.20 | Kamis | CR 401  | RANNY MEILISA , S.Kom., M.Pd.T |
 
