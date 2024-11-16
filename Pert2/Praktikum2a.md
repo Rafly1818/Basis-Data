@@ -137,7 +137,7 @@ Berikut adalah daftar table setelah pembuatan table `orderentry`:
 Tabel ini menyimpan informasi tentang vendor atau pemasok.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|-------------|---------------|------------------------------------|
+|:-------------|:---------------|:------------------------------------|
 | `vend_id`   | CHAR(4)       | ID unik untuk vendor (Primary Key)|
 | `vend_nama` | VARCHAR(25)   | Nama vendor                       |
 | `vend_address` | VARCHAR(30)| Alamat vendor                     |
@@ -150,7 +150,7 @@ Tabel ini menyimpan informasi tentang vendor atau pemasok.
 Tabel ini menyimpan informasi tentang pelanggan.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|-------------|---------------|------------------------------------|
+|:-------------|:---------------|:------------------------------------|
 | `cust_id`   | CHAR(4)       | ID unik pelanggan (Primary Key)   |
 | `cust_name` | VARCHAR(25)   | Nama pelanggan                    |
 | `cust_address` | VARCHAR(30)| Alamat pelanggan                  |
@@ -165,7 +165,7 @@ Tabel ini menyimpan informasi tentang pelanggan.
 Tabel ini menyimpan informasi produk yang tersedia.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|-------------|---------------|------------------------------------|
+|:-------------|:---------------|:------------------------------------|
 | `prod_id`   | VARCHAR(10)   | ID produk (Primary Key)           |
 | `vend_id`   | CHAR(4)       | ID vendor yang menyuplai produk   |
 | `prod_name` | VARCHAR(25)   | Nama produk                       |
@@ -176,7 +176,7 @@ Tabel ini menyimpan informasi produk yang tersedia.
 Tabel ini menyimpan informasi pesanan yang dilakukan oleh pelanggan.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|-------------|---------------|------------------------------------|
+|:------------------------------------|
 | `order_num` | INT           | Nomor pesanan (Primary Key)       |
 | `order_date`| DATE          | Tanggal pesanan                   |
 | `cust_id`   | CHAR(5)       | ID pelanggan                      |
@@ -185,7 +185,7 @@ Tabel ini menyimpan informasi pesanan yang dilakukan oleh pelanggan.
 Tabel ini menyimpan catatan tambahan tentang produk.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|-------------|---------------|------------------------------------|
+|:-------------|:---------------|:------------------------------------|
 | `note_id`   | CHAR(3)       | ID catatan (Primary Key)          |
 | `prod_id`   | VARCHAR(10)   | ID produk yang terkait            |
 | `note_date` | DATE          | Tanggal catatan dibuat            |
@@ -195,7 +195,7 @@ Tabel ini menyimpan catatan tambahan tentang produk.
 Tabel ini menyimpan informasi item yang ada di dalam setiap pesanan.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|-------------|---------------|------------------------------------|
+|:-------------|:---------------|:------------------------------------|
 | `order_num` | INT           | Nomor pesanan                     |
 | `order_item`| INT           | Urutan item dalam pesanan (Primary Key)|
 | `prod_id`   | VARCHAR(10)   | ID produk yang dipesan            |

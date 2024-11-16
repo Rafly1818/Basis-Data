@@ -76,6 +76,20 @@ Berikut adalah data yang terdapat pada tabel `praktikum`:
 
 
 ---
+## 🗃 Struktur Tabel
+
+Berikut adalah struktur tabel `praktikum` yang telah dibuat pada database:
+
+| Kolom    | Tipe Data    | Deskripsi                                  |
+|:----------|:--------------|:--------------------------------------------|
+| `nama`   | VARCHAR(30)  | Menyimpan nama mahasiswa                  |
+| `nim`    | VARCHAR(30)  | Menyimpan Nomor Induk Mahasiswa (NIM)      |
+| `jam`    | VARCHAR(30)  | Menyimpan jam pelaksanaan praktikum        |
+| `hari`   | VARCHAR(30)  | Menyimpan hari pelaksanaan praktikum       |
+| `ruangan`| VARCHAR(30)  | Menyimpan informasi ruangan praktikum      |
+| `dosen`  | VARCHAR(30)  | Menyimpan nama dosen pengajar             |
+
+---
 
 ## 📌 Kesimpulan
 
@@ -92,3 +106,6 @@ Database `praktikum` telah selesai dibuat dan siap digunakan untuk menyimpan dat
 
 💪 **Selamat! Anda telah berhasil menyelesaikan tugas praktikum pertama.** Terus semangat belajar dan kembangkan keterampilan Anda di bidang database! 🌟
 
+## 🔗 Badge
+
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
