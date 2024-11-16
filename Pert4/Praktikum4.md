@@ -70,7 +70,7 @@ DESC customers;
 
 
 | Field         | Type        | Null | Key | Default | Extra |
-|---------------|-------------|------|-----|---------|-------|
+|:---------------|:-------------|:------|:-----|:---------|:-------|
 | cust_id       | char(4)     | NO   | PRI | NULL    |       |
 | Nama_Customer | varchar(50) | YES  |     | NULL    |       |
 | cust_address  | varchar(50) | YES  |     | NULL    |       |
@@ -130,7 +130,7 @@ DESC contact_customer;
 ### Tugas 1: Struktur Tabel `customers`
 
 | Field         | Type        | Null | Key | Default | Extra |
-|---------------|-------------|------|-----|---------|-------|
+|:---------------|:-------------|:------|:-----|:---------|:-------|
 | cust_id       | char(4)     | NO   | PRI | NULL    |       |
 | Nama_Customer | varchar(50) | YES  |     | NULL    |       |
 | cust_address  | varchar(50) | YES  |     | NULL    |       |
@@ -146,14 +146,14 @@ DESC contact_customer;
 
 #### Sebelum Dimodifikasi
 | Field   | Type        | Null | Key | Default | Extra |
-|---------|-------------|------|-----|---------|-------|
+|:---------|:------------|:------|:-----|:---------|:-------|
 | Id_cust | varchar(5)  | NO   | PRI | NULL    |       |
 | HP1     | varchar(20) | NO   |     | NULL    |       |
 | HP2     | varchar(20) | NO   |     | NULL    |       |
 
 #### Setelah Dimodifikasi
 | Field     | Type        | Null | Key | Default | Extra |
-|-----------|-------------|------|-----|---------|-------|
+|:-----------|:-------------|:------|:-----|:---------|:-------|
 | Nama_Cust | varchar(50) | NO   | PRI | NULL    |       |
 | HP1       | varchar(50) | YES  |     | NULL    |       |
 | HP2       | varchar(20) | NO   |     | NULL    |       |
