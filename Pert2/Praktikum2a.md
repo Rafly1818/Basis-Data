@@ -176,7 +176,7 @@ Tabel ini menyimpan informasi produk yang tersedia.
 Tabel ini menyimpan informasi pesanan yang dilakukan oleh pelanggan.
 
 | Kolom       | Tipe Data     | Keterangan                        |
-|:------------------------------------|
+|:------------|:--------------|:----------------------------------|
 | `order_num` | INT           | Nomor pesanan (Primary Key)       |
 | `order_date`| DATE          | Tanggal pesanan                   |
 | `cust_id`   | CHAR(5)       | ID pelanggan                      |
