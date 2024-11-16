@@ -71,7 +71,7 @@ SELECT * FROM praktikum;
 Berikut adalah data yang terdapat pada tabel `praktikum`:
 
 | Nama | NIM | Jam | Hari | Ruangan | Dosen |
-|:------------------------|-------------|-------|-------|---------|--------------------------------|
+|:------------------------|:-------------|:-------|:-------|:---------|:--------------------------------|
 | Rafly Akbar Ravsanjani | 20230801401 | 16.20 | Kamis | CR 401  | RANNY MEILISA , S.Kom., M.Pd.T |
 
 
