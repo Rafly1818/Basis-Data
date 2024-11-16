@@ -32,13 +32,13 @@ SHOW DATABASES;
 ```
 Berikut adalah daftar database setelah pembuatan database `praktikum`:
 
-| Database |
-|-------------------------|
-| `information_schema`    |
-| `mysql`                 |
-| `performance_schema`    |
-| `phpmyadmin`            |
-| `praktikum`             |
+| Database              |
+|:----------------------|
+| `information_schema`  |
+| `mysql`               |
+| `performance_schema`  |
+| `phpmyadmin`          |
+| `praktikum`           |
 
 ### 2. Pembuatan Table `praktikum`
 ```sql
@@ -71,7 +71,7 @@ SELECT * FROM praktikum;
 Berikut adalah data yang terdapat pada tabel `praktikum`:
 
 | Nama | NIM | Jam | Hari | Ruangan | Dosen |
-|------------------------|-------------|-------|-------|---------|--------------------------------|
+|:------------------------|-------------|-------|-------|---------|--------------------------------|
 | Rafly Akbar Ravsanjani | 20230801401 | 16.20 | Kamis | CR 401  | RANNY MEILISA , S.Kom., M.Pd.T |
 
 
