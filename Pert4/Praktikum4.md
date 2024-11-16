@@ -1,4 +1,4 @@
-# 📊 Praktikum 2.1
+# 📊 Praktikum 4
 
 Selamat datang di repositori **Database Praktikum**! 🎓  
 Repositori ini berisi informasi dan script SQL Praktikum Basis Data.
@@ -110,12 +110,14 @@ DESC contact_customer;
 | `products`             |  
 | `vendors`              |
 
+#### Sebelum Dimodifikasi
 | Field   | Type        | Null | Key | Default | Extra |
 |:---------|:-------------|:------|:-----|:---------|:-------|
 | Id_cust | varchar(5)  | NO   | PRI | NULL    |       |
 | HP1     | varchar(20) | NO   |     | NULL    |       |
 | HP2     | varchar(20) | NO   |     | NULL    |       |
 
+#### Setelah Dimodifikasi
 | Field     | Type        | Null | Key | Default | Extra |
 |:-----------|:-------------|:------|:-----|:---------|:-------|
 | Nama_Cust | varchar(50) | NO   | PRI | NULL    |       |
