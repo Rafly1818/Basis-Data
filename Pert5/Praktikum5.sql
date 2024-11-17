@@ -1,8 +1,3 @@
-Nama	: Rafly Akbar Ravsanjani
-NIM	: 20230801401
-Praktikum Pertemuan 5 Basis Data
-
-
 C:\Users\USER>cd c:/xampp/mysql/bin
 
 c:\xampp\mysql\bin>mysql -u root -p
