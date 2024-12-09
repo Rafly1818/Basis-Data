@@ -20,7 +20,7 @@ MariaDB [OrderEntry]> create table vendors(
     -> vend_city        VARCHAR(20),
     -> vend_state       VARCHAR(5),
     -> vend_zip         VARCHAR(7),
-    -> vend_country     VARCHAR(15));
+    -> ad
 Query OK, 0 rows affected (0.029 sec)
 
 MariaDB [OrderEntry]> create table customers(
